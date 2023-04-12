@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transition Effects</title>
+	<style>
+		/* Define some basic styles for our elements */
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			margin: 20px;
+			display: inline-block;
+			transition: all 1s; /* specify the transition effect and duration */
+		}
+
+		/* Define different styles for our elements */
+		.box:hover {
+			background-color: red;
+			transform: rotate(360deg);
+			border-radius: 50%;
+		}
+
+		/* Define styles for our button */
+		button {
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			background-color: green;
+			color: white;
+			border: none;
+			cursor: pointer;
+			transition: all 0.5s;
+		}
+
+		/* Define different styles for our button */
+		button:hover {
+			background-color: orange;
+			transform: scale(1.2);
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+
+	<button>Click Me</button>
+
+	<script>
+		// Add some JavaScript to change the styles of our elements
+		let boxes = document.querySelectorAll(".box");
+		boxes.forEach(box => {
+			box.addEventListener("click", () => {
+				box.style.backgroundColor = "yellow";
+				box.style.transform = "translateX(200px)";
+			});
+			box.addEventListener("transitionend", () => {
+				box.style.backgroundColor = "blue";
+				box.style.transform = "none";
+			});
+		});
+
+		let button = document.querySelector("button");
+		button.addEventListener("click", () => {
+			button.style.backgroundColor = "purple";
+			button.style.color = "yellow";
+			button.style.boxShadow = "none";
+		});
+		button.addEventListener("transitionend", () => {
+			button.style.backgroundColor = "green";
+			button.style.color = "white";
+			button.style.boxShadow = "none";
+		});
+	</script>
+</body>
+</html>
