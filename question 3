@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rounded Corners Example</title>
+    <style>
+      /* Rounded corners for the div element */
+      div {
+        border: 1px solid black;
+        border-radius: 20px; /* 20px radius for all corners */
+        padding: 20px;
+        background-color: #F5F5F5;
+        width: 300px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Example</h1>
+      <p>This is an example of rounded corners using CSS3.</p>
+    </div>
+  </body>
+</html>
