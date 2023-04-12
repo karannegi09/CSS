@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resizing Background Image</title>
+	<style>
+		body {
+			background-image: url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<h1>Example Heading</h1>
+	<p>Example paragraph text.</p>
+</body>
+</html>
